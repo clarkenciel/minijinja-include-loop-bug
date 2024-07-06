@@ -1,0 +1,7 @@
+{% for thing in things %}
+  {% if thing.name == "a" %}
+    {% include "thing-a.txt.j2" %}
+  {% else %}
+    {% include "thing-b.txt.j2" %}
+  {% endif %}
+{% endfor %}
